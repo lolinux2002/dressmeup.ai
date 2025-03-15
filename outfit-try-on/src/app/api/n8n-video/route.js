@@ -107,7 +107,7 @@ export async function POST(request) {
     processingRequests.set(requestId, 'processing');
 
     // Get webhook URL from environment variables
-    const n8nVideoWebhookUrl = process.env.N8N_VIDEO_WEBHOOK_URL || 'https://n8n.lolinux2002.com/webhook/outfit-try-on-video';
+    const n8nVideoWebhookUrl = process.env.N8N_VIDEO_WEBHOOK_URL || 'https://n8n.lolinux2002.com/webhook-test/outfit-try-on-video';
     
     // Process the image to ensure it's at least 300px and convert to PNG
     let imageUrl = requestBody.image_url;
